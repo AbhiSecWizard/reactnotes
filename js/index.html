@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishek Yadav - Portfolio</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; color: #333; }
+        header { background-color: #0077b5; color: white; padding: 20px; text-align: center; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        section { margin-bottom: 40px; }
+        h2 { border-bottom: 2px solid #0077b5; padding-bottom: 10px; }
+        .skills, .projects, .experience { display: flex; flex-wrap: wrap; gap: 20px; }
+        .skill, .project, .job { background: white; padding: 15px; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); flex: 1 1 300px; }
+        footer { background-color: #333; color: white; text-align: center; padding: 10px; }
+        a { color: #0077b5; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Abhishek Yadav</h1>
+        <p>Software Engineer | LinkedIn: <a href="https://www.linkedin.com/in/abhishek-yadav-0b2711397/" target="_blank">View Profile</a></p>
+    </header>
+    
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Passionate software engineer with expertise in [e.g., web development, data science]. Graduated from [University/College] with a degree in [Field]. I love building innovative solutions and collaborating on open-source projects. (Pull bio from LinkedIn.)</p>
+        </section>
+        
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills">
+                <div class="skill">JavaScript</div>
+                <div class="skill">Python</div>
+                <div class="skill">React</div>
+                <div class="skill">Node.js</div>
+                <!-- Add more skills from LinkedIn -->
+            </div>
+        </section>
+        
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects">
+                <div class="project">
+                    <h3>Project Title 1</h3>
+                    <p>Description: [Brief summary from LinkedIn projects]. Tech stack: [e.g., HTML, CSS, JS]. <a href="#">GitHub Link</a></p>
+                </div>
+                <div class="project">
+                    <h3>Project Title 2</h3>
+                    <p>Description: [Another project]. <a href="#">Live Demo</a></p>
+                </div>
+                <!-- Add more projects -->
+            </div>
+        </section>
+        
+        <section id="experience">
+            <h2>Experience</h2>
+            <div class="experience">
+                <div class="job">
+                    <h3>Job Title at Company</h3>
+                    <p>[Dates] - [Description from LinkedIn]. Achievements: [Key points].</p>
+                </div>
+                <!-- Add more jobs -->
+            </div>
+        </section>
+        
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: [your-email@example.com] | Phone: [number] | LinkedIn: <a href="https://www.linkedin.com/in/abhishek-yadav-0b2711397/">Profile</a></p>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; 2023 Abhishek Yadav. All rights reserved.</p>
+    </footer>
+    
+    <script>
+        // Simple JS for smooth scrolling (optional)
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
